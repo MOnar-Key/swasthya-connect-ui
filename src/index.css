@@ -115,3 +115,9 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden ;
+}
