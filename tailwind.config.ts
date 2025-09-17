@@ -102,20 +102,49 @@ export default {
             transform: "translateY(0)"
           }
         },
+        "pulse-glow": {
+          "0%, 100%": {
+            opacity: "0.5"
+          },
+          "50%": {
+            opacity: "1"
+          }
+        },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)"
+          },
+          "50%": {
+            transform: "translateY(-10px)"
+          }
+        },
+        "rotate-slow": {
+          "0%": {
+            transform: "rotate(0deg)"
+          },
+          "100%": {
+            transform: "rotate(360deg)"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out",
         "slide-up": "slide-up 0.4s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
+        "rotate-slow": "rotate-slow 8s linear infinite",
       },
       backgroundImage: {
         'healthcare-gradient': 'var(--healthcare-gradient)',
         'healthcare-gradient-subtle': 'var(--healthcare-gradient-subtle)',
+        'conic-gradient': 'var(--conic-gradient)',
       },
       boxShadow: {
         'healthcare': 'var(--shadow-healthcare)',
         'form': 'var(--shadow-form)',
+        'glow': 'var(--shadow-glow)',
       },
     },
   },
